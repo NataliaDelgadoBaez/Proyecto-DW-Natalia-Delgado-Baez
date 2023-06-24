@@ -4,103 +4,14 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body{    
     background-color: antiquewhite;
 }
 
- /* HEADER */
-
-
-.logoImagen {  
-    width: 80px; 
-    height: 80px;
-    border-radius: 50% 50%; 
-    margin-top: 5px;
-} 
-
-#headerGeneral{
-    display: flex;
-    width: 100vw;
-    height: 90px;
-    background-color: rgb(205, 185, 159);
-    position: sticky; 
-    margin: 0;
-    top: 0;
-    z-index: 1;
-} 
-    
-.menuHeader{
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-}  
-
-.menuHeader li{
-    display: flex;
-    justify-content: end;
-    padding: 20px;
-    border-radius: 3px;
-}
-
-.menuHeader li a{
-    display: block;
-}
-
-.checkbtn {
-    font-size: 40px;
-    color: #fff;
-    align-self: center;
-    cursor: pointer;
-    margin-left: 15px;
-    display: none;
-}
-
-#checkMenu {
-    display: none;
-}
-
-/*@media (max-width:600px){  
-    .logoImagen { 
-        display: none;
-    }
-     .menuHeader{ 
-        flex-direction: column;
-        width: 100%;
-        height: 100px;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(205, 185, 159);
-    }
-    .menuHeader li{
-        padding: 5px;
-        font-size: 30px;
-    }.menuHeader{
-        margin: 30px 0 0 0;
-        line-height: 30px;
-     }
-    .menuHeader{
-        position: fixed;
-        width: 100vw;
-        height: calc(100%  65px);
-        /* top: -100vh; 
-        text-align: center;
-        transition: all 4s;
-    }
-    .checkbtn{
-        display: inline-flex;
-    }
-    #headerGeneral{
-        position: relative;
-         
-        
-    } 
-    
-}*/
-
-/* INDEX 1 */
+ /* INDEX 1 
 
 #primeraIndex {
     position: relative;
@@ -316,18 +227,14 @@ body{
 }
 }
 
-/* TRATAMIENTOS */
+ /* TRATAMIENTOS  */
 
-#contenidoTratamiento { 
-    display: flex;
-    flex-direction: column;
+#contenidoTratamiento img { 
+    width: 100%;
+    display: block;
 }   
-
 #contenidoTratamiento h1 { 
-    display: flex;
-    margin-top: 30px;
-    justify-content: center;
-    font-size: 3.125em;
+   text-align: center;
     
 }
 
@@ -336,7 +243,7 @@ body{
     height:230px;
     margin: 20px;
 }
-
+/*  
 #contenidoTratamiento h2 { 
     display: flex;
     margin-top: 5px;
@@ -397,7 +304,7 @@ body{
     padding: 30px;
 }
 
-/* CONTACTENOS */
+/* CONTACTENOS 
 
 #contenidoContactenos { 
     display: flex;
@@ -427,43 +334,5 @@ body{
 
 .mapa iframe{
     margin-left: 80px;
-}
+}*/
 
-
-    
-    
-/* RESPONSIVE */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FOOTER */
-
-.footerGeneral{  
-    
-    background-color: rgb(227, 203, 171);
-    padding: 15px;
-    height: 15px;
-}
-
-.footerGeneral h4{  
-    text-align: center;
-}
-
-@media (max-width:600px){   
-    .footerGeneral{
-    width: 100%;
-}
-}

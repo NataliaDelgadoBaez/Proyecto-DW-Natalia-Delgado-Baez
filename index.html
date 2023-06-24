@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/Styles.css">
     <title>Beauty SV</title>
 </head>
@@ -12,32 +13,47 @@
 
     <!-- ENCABEZADO GENERAL_BARRA DE NAVEGACION -->
 
-    <header id="headerGeneral"> 
-
-            <input type="checkbox" id="checkMenu">
-            <label for="checkMenu" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-
-            <img class="logoImagen" src="img/logo.png" alt="">
-
-        <nav class="linksEncabezado"> 
+    <header id="headerGeneral">
             
-            <ul class="menuHeader">
-                <li><a href="">Inicio</a></li>
-                <li><a href="Pages/Nosotros.html">Nosotros</a></li>
-                <li><a href="Pages/Tratamientos.html">Tratamientos</a></li>
-                <li><a href="Pages/Agenda.html">Agenda</a></li>
-                <li><a href="Pages/Contactenos.html">Contactenos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3cbab">
+            <div class="container">
+                <a class="navbar-brand" href="">
+                    <img class="rounded-circle" src="img/logo.png" width="60px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pages/Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pages/Tratamientos.html">Tratamientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pages/Agenda.html">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pages/Contactenos.html">Contactenos</a>
+                        </li>
+                    </ul>
+                </div>
         </nav>
+        
     </header>
+    
  
     <main>
 
             <!-- CONTENIDO PRINCIPAL INDEX -->
             
         <div id="primeraIndex">
+
 
             <h1>¡BIENVENIDOS!</h1>
             <img src="img/Facial 3.jpg" alt="Foto facial">
@@ -102,12 +118,18 @@
 
         <!-- PIE DE PAGINA GENERAL -->
 
-    <footer class="footerGeneral">
+    <footer id="footerGeneral">
 
-        <h4>SOFIA VICTORIA BEAUTY</h4>
+        <div class="container-fluid" style="background-color: #e3cbab;">
+            <section raw justify-content-center>
+
+                <h4 class="col-12 text-center ">SOFIA VICTORIA BEAUTY</h4>
+
+            </section>
+        </div>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
 </html>

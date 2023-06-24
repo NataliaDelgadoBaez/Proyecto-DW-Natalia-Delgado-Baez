@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/Styles.css">
     <title>Beauty SV</title>
 </head>
@@ -12,54 +15,72 @@
 
     <header>
 
-     <!-- ENCABEZADO GENERAL_BARRA DE NAVEGACION -->
+        <!-- ENCABEZADO GENERAL_BARRA DE NAVEGACION -->
 
-     <header id="headerGeneral"> 
+        <header id="headerGeneral">
 
-        <input type="checkbox" id="checkMenu">
-        <label for="checkMenu" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
+            <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3cba1">
+                <div class="container">
+                    <a class="navbar-brand" href="">
+                        <img class="rounded-circle" src="../img/logo.png" width="60px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                        aria-controls="menu" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Pages/Nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Pages/Tratamientos.html">Tratamientos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Pages/Agenda.html">Agenda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Contactenos</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+            
+        </header>
 
-        <img class="logoImagen" src="../img/logo.png" alt="">
 
-    <nav class="linksEncabezado"> 
-        
-        <ul class="menuHeader">
-            <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../Pages/Nosotros.html">Nosotros</a></li>
-                <li><a href="../Pages/Tratamientos.html">Tratamientos</a></li>
-                <li><a href="../Pages/Agenda.html">Agenda</a></li>
-                <li><a href="">Contactenos</a></li>
-        </ul>
-    </nav>
-</header>
-    
-    
 
-    <main>
+        <main>
 
-        <!-- CONTENIDO PRINCIPAL CONTACTENOS -->
+            <!-- CONTENIDO PRINCIPAL CONTACTENOS -->
 
-        <div id="contenidoContactenos">
+            <div id="contenidoContactenos">
+                <section class="container">
+                    <div class="raw">
 
-            <h1>Encontranos en...</h1>
+                        <h1 class="col-lg-6 col-2">Encontranos en...</h1>
 
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.964810954715!2d-54.
-                943840725257!3d-34.9324194728382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9575054adb5781fd%3A0x2e1f0acff36a3028!2sRoosevelt%20Center
-                %20I!5e0!3m2!1ses-419!2suy!4v1685366307280!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" 
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
-                <p>Av. Roosevelt 1002
-                Edificio Roosevelt Center, apto 103
-                Punta del Este, Uruguay.
-                </p>
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.964810954715!2d-54.
+                    943840725257!3d-34.9324194728382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9575054adb5781fd%3A0x2e1f0acff36a3028!2sRoosevelt%20Center
+                    %20I!5e0!3m2!1ses-419!2suy!4v1685366307280!5m2!1ses-419!2suy" width="600" height="450"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            <p>Av. Roosevelt 1002
+                                Edificio Roosevelt Center, apto 103
+                                Punta del Este, Uruguay.
+                            </p>
+                        </div>
+                </section>
             </div>
 
             <div class="redes">
 
-                    <h2>O podes enviarnos un mensaje</h2>
+                <h2>O podes enviarnos un mensaje</h2>
                 <div class="listaRedes">
                     <nav>
 
@@ -68,21 +89,29 @@
                             <li><a href=""></a>MAIL</li>
                             <li><a href=""></a>WS</li>
                         </ul>
-            
+
                     </nav>
                 </div>
             </div>
-        </div>
+            </div>
 
-    </main>
+        </main>
 
-    <!-- PIE DE PAGINA GENERAL -->
+        <!-- PIE DE PAGINA GENERAL -->
 
-    <footer class="footerGeneral">
+        <footer id="footerGeneral">
 
-        <h4>SOFIA VICTORIA BEAUTY</h4>
-
-    </footer>
+            <div class="container-fluid" style="background-color: #e3cbab;">
+                <section raw justify-content-center>
+    
+                    <h4 class="col-12 text-center ">SOFIA VICTORIA BEAUTY</h4>
+    
+                </section>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
 
 </body>
 
