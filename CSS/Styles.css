@@ -276,6 +276,7 @@ body{
 /*AGENDA*/
 
 #contenidoAgenda { 
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
 }   
@@ -284,17 +285,21 @@ body{
     display: flex;
     margin-top: 30px;
     justify-content: center;
-    font-size: 2.188em;
+    font-size: 25px;
     
 }
 
 #contenidoAgenda img{
-    width: 350px;
-    height:230px;
+    width: 100%;
     margin: 20px;
+    border-radius: 50%;
 }
 
 #contenidoAgenda h2 { 
+    display: none;
+}
+
+#contenidoAgenda h3 { 
     display: flex;
     flex-direction: row;
     margin-top: 5px;
@@ -313,6 +318,42 @@ body{
     flex-direction: row;
     padding: 30px;
 }
+
+@media (max-width:600px){ 
+    
+    
+    #contenidoAgenda h1 { 
+        display: none;
+        
+    }
+    #contenidoAgenda h2 { 
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+    }
+    
+    #contenidoAgenda img{
+        width: 100%;
+        margin: 5px;
+    }
+    
+    #contenidoAgenda h3 { 
+        font-size: 15px;
+    }
+    
+    .primerTrioA {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .segundoTrioA {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+}
+
 
 /* CONTACTENOS */
 
