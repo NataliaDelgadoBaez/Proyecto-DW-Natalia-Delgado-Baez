@@ -15,7 +15,7 @@ body{
  /* INDEX 1  */
 
 #primeraIndex {
-    width: 100vw;
+    width: 100%;
     position: relative;
     justify-content: center;
 }
