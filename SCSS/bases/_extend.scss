@@ -1,0 +1,15 @@
+%pos-index2 {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+%img-index2 {
+    width: 100%;
+    height: 300px;
+
+}
+

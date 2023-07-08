@@ -45,7 +45,7 @@
 @media (max-width: 600px) {
   #contenidoAgenda {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     padding: 0px;
     justify-content: center;
 
@@ -60,21 +60,23 @@
       justify-content: center;
     }
 
-    & img {
-      width: 70%;
-      margin: 5px;
-    }
-
-    & h3 {
-      font-size: 15px;
-    }
-  
-  
     .Agenda {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       padding: 0px;
       justify-content: center;
+
+      & img {
+        width: 70%;
+        margin: 5px;
+      }
+
+      & h3 {
+        font-size: 15px;
+      }
+
     }
   }
 }
+
+
