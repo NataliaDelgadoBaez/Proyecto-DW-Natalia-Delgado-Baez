@@ -38,6 +38,19 @@ body {
   color: #6e6b68;
 }
 
+.form-custom {
+  width: 300px;
+}
+
+.btn-custom {
+  background-color: #e3cbab;
+  color: #6e6b68;
+}
+
+#btn-busqueda:active {
+  background-color: #faebd7;
+}
+
 /* INDEX 1 */
 #primeraIndex {
   width: 100%;

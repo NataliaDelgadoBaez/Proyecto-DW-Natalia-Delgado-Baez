@@ -1,5 +1,20 @@
  /* COLOR ENCORE HEADER*/
 
- .navbar-nav a {
-    color: $color-font;
+ .navbar-nav {
+    a {
+       color: $color-font;
+    }
+ }
+
+ .form-custom {
+   width: 300px; 
+ }
+ 
+ .btn-custom {
+   background-color: #e3cbab;
+   color: $color-font
+ }
+
+ #btn-busqueda:active {
+   background-color: $body-color;
  }
