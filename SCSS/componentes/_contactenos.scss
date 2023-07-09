@@ -1,0 +1,57 @@
+#contenidoContactenos {
+    h1 {
+      margin: 35px;
+    }
+  }
+  
+  .ubicacion {
+    iframe {
+      width: 100%;
+      height: 400px;
+    }
+  
+    display: flex;
+    align-items: center;
+  
+    p {
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+  
+  /* BARRA SOCIAL */
+  
+  .Sociales {
+    h2 {
+      margin-top: 40px;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #contenidoContactenos {
+      h1 {
+        margin: 35px;
+        font-size: 20px;
+        text-align: left;
+      }
+    }
+  
+    .ubicacion {
+      iframe {
+        width: 90%;
+        height: 200px;
+      }
+  
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+  
+      p {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
