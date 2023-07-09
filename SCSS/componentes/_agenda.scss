@@ -1,3 +1,5 @@
+/* TRATAMIENTOS*/
+
 #contenidoAgenda {
 
   & h1 {
@@ -30,7 +32,7 @@
       width: 100%;
       border-radius: 50%;
     }
-    
+
     & img:hover {
       transform: scale(1.5);
       transition: all, 1.5s;
@@ -44,6 +46,7 @@
   }
 }
 
+/* MOBILE TRATAMIENTOS*/
 
 @media (max-width: 600px) {
   #contenidoAgenda {
@@ -81,5 +84,3 @@
     }
   }
 }
-
-

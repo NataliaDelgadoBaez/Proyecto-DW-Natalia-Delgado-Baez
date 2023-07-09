@@ -1,10 +1,14 @@
+//BASES
+
 @import"./bases/variables";
 @import"./bases/general";
 @import"./bases/footer";
 @import"./bases/mapas";
 @import"./bases/extend";
 @import"./bases/mixin";
+@import"./bases/header";
 
+//COMPONENTES
 
 @import"./componentes/index";
 @import"./componentes/nosotros";

@@ -59,6 +59,8 @@
 
 }
 
+/* MOBILE */
+
 @media (max-width: 600px) {
   #primeraIndex h1 {
     font-size: 20px;
@@ -107,18 +109,18 @@
 
     .fotoFacialindex2 {
       width: map-get($img-index2mq, wd);
-      height:map-get($img-index2mq, hgt);
-      
+      height: map-get($img-index2mq, hgt);
+
     }
 
     .fotoCorporalindex2 {
       width: map-get($img-index2mq, wd);
-      height:map-get($img-index2mq, hgt);
+      height: map-get($img-index2mq, hgt);
     }
 
     .fotoProductosindex2 {
       width: map-get($img-index2mq, wd);
-      height:map-get($img-index2mq, hgt);
+      height: map-get($img-index2mq, hgt);
     }
   }
 }

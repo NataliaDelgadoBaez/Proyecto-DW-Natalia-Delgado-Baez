@@ -1,13 +1,15 @@
+/* VARIABLES GENERALES*/ /* GENERAL*/
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
   font-family: "Montserrat", sans-serif;
+  color: #6e6b68;
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: #faebd7;
 }
 
 /* FOOTER */
@@ -15,6 +17,7 @@ body {
   margin-top: 25px;
 }
 
+/* INDEX*/ /* POSICION INDEX*/
 #segundaIndex .productosIndex2, #segundaIndex .corporalesIndex2, #segundaIndex .facialesIndex2 {
   display: grid;
   grid-template-columns: 300px 300px;
@@ -24,9 +27,15 @@ body {
   justify-items: center;
 }
 
+/* IMAGENES INDEX*/
 #segundaIndex .fotoProductosindex2, #segundaIndex .fotoCorporalindex2, #segundaIndex .fotoFacialindex2 {
   width: 100%;
   height: 300px;
+}
+
+/* IMAGENES TRATAMIENTOS*/ /* COLOR ENCORE HEADER*/
+.navbar-nav a {
+  color: #6e6b68;
 }
 
 /* INDEX 1 */
@@ -59,6 +68,7 @@ body {
   text-align: center;
   padding: 35px;
 }
+/* MOBILE */
 @media (max-width: 600px) {
   #primeraIndex h1 {
     font-size: 20px;
@@ -108,6 +118,7 @@ body {
     height: auto;
   }
 }
+/* NOSOOTROS*/
 #contenidoNosotros {
   display: grid;
   grid-template-columns: 500px 700px;
@@ -117,7 +128,7 @@ body {
   justify-items: center;
 }
 #contenidoNosotros .fotoNosotros {
-  width: 90%;
+  width: 70%;
   height: 600px;
   margin-top: 15px;
 }
@@ -133,6 +144,7 @@ body {
   align-self: center;
 }
 
+/* MOBILE NOSOTROS*/
 @media (max-width: 600px) {
   #contenidoNosotros {
     grid-template-columns: 1fr;
@@ -161,6 +173,7 @@ body {
   justify-content: center;
   align-items: center;
   justify-items: center;
+  /* MOBILE TRATAMIENTOS*/
 }
 .Tratamientos img {
   width: 100%;
@@ -201,6 +214,7 @@ body {
   }
 }
 
+/* TRATAMIENTOS*/
 #contenidoAgenda h1 {
   display: flex;
   margin: 30px;
@@ -234,6 +248,7 @@ body {
   text-align: center;
 }
 
+/* MOBILE TRATAMIENTOS*/
 @media (max-width: 600px) {
   #contenidoAgenda {
     display: grid;
@@ -263,6 +278,7 @@ body {
     font-size: 15px;
   }
 }
+/* CONTACTENOS*/
 #contenidoContactenos h1 {
   margin: 35px;
 }
@@ -281,11 +297,49 @@ body {
 }
 
 /* BARRA SOCIAL */
+.Sociales {
+  display: flex;
+  flex-direction: column;
+}
 .Sociales h2 {
-  margin-top: 40px;
+  margin-top: 80px;
   text-align: center;
 }
 
+.sr {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.socialesRedes {
+  width: 80px;
+  height: 80px;
+  padding: 40px;
+  display: block;
+  box-shadow: 0 3px 6px rgba(52, 50, 51, 0.761);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+.socialesRedes:hover {
+  width: 10%;
+  padding: 0 10px;
+}
+.socialesRedes:nth-child(1):hover {
+  color: #3f3d3e;
+}
+.socialesRedes:nth-child(2):hover {
+  color: #3f3d3e;
+}
+.socialesRedes:nth-child(3):hover {
+  color: #3f3d3e;
+}
+
+/* MOBILE CONTACTENOS*/
 @media (max-width: 600px) {
   #contenidoContactenos h1 {
     margin: 35px;
@@ -306,6 +360,22 @@ body {
     font-size: 15px;
     text-align: center;
     margin-top: 10px;
+  }
+  .Sociales h2 {
+    margin-top: 15px;
+  }
+  .sr {
+    margin-top: 20px;
+  }
+  .socialesRedes {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    display: block;
+    box-shadow: 0 1px 4px rgba(52, 50, 51, 0.761);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

@@ -1,57 +1,122 @@
+/* CONTACTENOS*/
+
 #contenidoContactenos {
+  h1 {
+    margin: 35px;
+  }
+}
+
+.ubicacion {
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+/* BARRA SOCIAL */
+
+.Sociales {
+  h2 {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sr {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.socialesRedes {
+  width: 80px;
+  height: 80px;
+  padding: 40px;
+  display: block;
+  box-shadow: 0 3px 6px rgba(52, 50, 51, 0.761);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+
+  &:hover {
+    width: 10%;
+    padding: 0 10px;
+  }
+
+  &:nth-child(1):hover {
+    color: $color-boxCont;
+  }
+
+  &:nth-child(2):hover {
+    color:$color-boxCont;
+  }
+
+  &:nth-child(3):hover {
+    color:$color-boxCont;
+  }
+}
+
+/* MOBILE CONTACTENOS*/
+
+@media (max-width: 600px) {
+  #contenidoContactenos {
     h1 {
       margin: 35px;
+      font-size: 20px;
+      text-align: left;
     }
   }
-  
+
   .ubicacion {
     iframe {
-      width: 100%;
-      height: 400px;
+      width: 90%;
+      height: 200px;
     }
-  
-    display: flex;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
     align-items: center;
-  
+
     p {
-      font-size: 25px;
+      font-size: 15px;
       text-align: center;
+      margin-top: 10px;
     }
   }
-  
-  /* BARRA SOCIAL */
-  
+
   .Sociales {
     h2 {
-      margin-top: 40px;
-      text-align: center;
+      margin-top: 15px;
     }
   }
-  
-  @media (max-width: 600px) {
-    #contenidoContactenos {
-      h1 {
-        margin: 35px;
-        font-size: 20px;
-        text-align: left;
-      }
-    }
-  
-    .ubicacion {
-      iframe {
-        width: 90%;
-        height: 200px;
-      }
-  
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: center;
-      align-items: center;
-  
-      p {
-        font-size: 15px;
-        text-align: center;
-        margin-top: 10px;
-      }
-    }
+
+  .sr {
+    margin-top: 20px;
   }
+
+  .socialesRedes {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    display: block;
+    box-shadow: 0 1px 4px rgba(52, 50, 51, 0.761);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
