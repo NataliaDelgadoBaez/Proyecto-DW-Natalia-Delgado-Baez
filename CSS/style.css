@@ -51,6 +51,22 @@ body {
   background-color: #faebd7;
 }
 
+.form-inline .input-group {
+  flex-wrap: wrap;
+}
+.form-inline .input-group .form-control {
+  width: 20%;
+  margin-bottom: 5px;
+}
+@media (max-width: 576px) {
+  .form-inline .input-group {
+    flex-direction: row;
+  }
+  .form-inline .input-group .form-control {
+    margin-bottom: 0;
+  }
+}
+
 /* INDEX 1 */
 #primeraIndex {
   width: 100%;

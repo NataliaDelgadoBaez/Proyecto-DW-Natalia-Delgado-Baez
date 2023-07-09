@@ -7,14 +7,35 @@
  }
 
  .form-custom {
-   width: 300px; 
+    width: 300px;
  }
- 
+
  .btn-custom {
-   background-color: #e3cbab;
-   color: $color-font
+    background-color: #e3cbab;
+    color: $color-font
  }
 
  #btn-busqueda:active {
-   background-color: $body-color;
+    background-color: $body-color;
+ }
+
+ .form-inline {
+   .input-group {
+     flex-wrap: wrap;
+   
+     .form-control {
+       width: 20%;
+       margin-bottom: 5px;
+     }
+   }
+   
+   @media (max-width: 576px) {
+     .input-group {
+       flex-direction: row;
+       
+       .form-control {
+         margin-bottom: 0;
+       }
+     }
+   }
  }
