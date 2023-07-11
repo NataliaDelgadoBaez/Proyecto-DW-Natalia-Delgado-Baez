@@ -1,6 +1,7 @@
 /* AGENDA*/
 
 #contenidoAgenda {
+
   & h1 {
     display: flex;
     margin: 30px;
@@ -15,15 +16,17 @@
   .Agenda {
     display: grid;
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: auto;
+    align-items: center;
     justify-content: center;
-    padding: 30px;
+
 
     & div {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
+
+
 
     & img {
       width: 100%;
@@ -39,11 +42,11 @@
       font-size: 25px;
       text-align: center;
     }
+
   }
 }
 
-
-/* MOBILE TRATAMIENTOS*/
+/* MOBILE AGENDA*/
 
 @media (max-width: 600px) {
   #contenidoAgenda {

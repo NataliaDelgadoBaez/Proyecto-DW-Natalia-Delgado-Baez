@@ -1,10 +1,18 @@
 /* TRATAMIENTOS */
 
+#contenidoTratamiento {
+  & h1 {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    font-size: 45px;
+  }
+}
+
 .Tratamientos {
   img {
     @extend %img-tratamientos;
   }
-
 
   img:hover {
     transform: scale(1.3);

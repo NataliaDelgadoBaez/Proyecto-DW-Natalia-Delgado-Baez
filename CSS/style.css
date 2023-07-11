@@ -149,7 +149,7 @@ p {
     font-size: 14px;
   }
 }
-/* NOSOOTROS*/
+/* NOSOTROS*/
 #contenidoNosotros {
   display: flex;
   justify-content: center;
@@ -199,6 +199,13 @@ p {
 }
 
 /* TRATAMIENTOS */
+#contenidoTratamiento h1 {
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+  font-size: 45px;
+}
+
 .Tratamientos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -253,9 +260,8 @@ p {
 #contenidoAgenda .Agenda {
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-template-rows: auto;
+  align-items: center;
   justify-content: center;
-  padding: 30px;
 }
 #contenidoAgenda .Agenda div {
   display: flex;
@@ -275,7 +281,7 @@ p {
   text-align: center;
 }
 
-/* MOBILE TRATAMIENTOS*/
+/* MOBILE AGENDA*/
 @media (max-width: 600px) {
   #contenidoAgenda {
     display: grid;
