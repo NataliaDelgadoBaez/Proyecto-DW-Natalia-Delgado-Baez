@@ -129,6 +129,11 @@ p {
   #segundaIndex {
     padding: 20px;
   }
+  .facialesIndex2,
+  .corporalesIndex2,
+  .productosIndex2 {
+    flex-direction: column;
+  }
   h1 {
     font-size: 20px;
   }
@@ -248,8 +253,9 @@ p {
 #contenidoAgenda .Agenda {
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  align-items: center;
+  grid-template-rows: auto;
   justify-content: center;
+  padding: 30px;
 }
 #contenidoAgenda .Agenda div {
   display: flex;

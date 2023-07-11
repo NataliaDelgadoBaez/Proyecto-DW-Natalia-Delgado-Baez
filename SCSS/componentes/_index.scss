@@ -68,6 +68,11 @@ p {
   #segundaIndex {
     padding: 20px;
   }
+  .facialesIndex2,
+  .corporalesIndex2,
+  .productosIndex2 {
+  flex-direction: column;
+}
 
   h1 {
     font-size: 20px;
