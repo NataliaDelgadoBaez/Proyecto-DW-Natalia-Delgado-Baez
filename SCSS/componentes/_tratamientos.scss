@@ -2,8 +2,9 @@
 
 .Tratamientos {
   img {
-    @include imgtratamientos;
+    @extend %img-tratamientos;
   }
+
 
   img:hover {
     transform: scale(1.3);
@@ -27,6 +28,7 @@
     flex-direction: column;
     align-items: center;
   }
+
 
   /* MOBILE TRATAMIENTOS*/
 

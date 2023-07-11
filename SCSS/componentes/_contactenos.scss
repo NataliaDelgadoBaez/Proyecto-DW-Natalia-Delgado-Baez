@@ -21,8 +21,6 @@
   }
 }
 
-/* BARRA SOCIAL */
-
 .Sociales {
   h2 {
     margin-top: 80px;
@@ -70,8 +68,7 @@
   }
 }
 
-/* MOBILE CONTACTENOS*/
-
+/* CONTACTENOS MOBILE */
 @media (max-width: 600px) {
   #contenidoContactenos {
     h1 {
@@ -83,7 +80,7 @@
 
   .ubicacion {
     iframe {
-      width: 90%;
+      width: 100%;
       height: 200px;
     }
 

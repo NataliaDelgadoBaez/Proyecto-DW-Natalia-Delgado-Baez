@@ -17,27 +17,20 @@ body {
   margin-top: 25px;
 }
 
-/* INDEX*/ /* POSICION INDEX*/
-#segundaIndex .productosIndex2, #segundaIndex .corporalesIndex2, #segundaIndex .facialesIndex2 {
-  display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-}
-
-/* IMAGENES INDEX*/
-#segundaIndex .fotoProductosindex2, #segundaIndex .fotoCorporalindex2, #segundaIndex .fotoFacialindex2 {
+/* INDEX*/ /* IMG TRATAMIENTOS*/
+.Tratamientos img {
   width: 100%;
-  height: 300px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 20px;
 }
 
-/* IMAGENES TRATAMIENTOS*/ /* COLOR ENCORE HEADER*/
+/* INDEX MOBILE*/ /* COLOR ENCORE HEADER*/
 .navbar-nav a {
   color: #6e6b68;
 }
 
+/* FORMULARIO*/
 .form-custom {
   width: 300px;
 }
@@ -73,128 +66,133 @@ body {
   position: relative;
   justify-content: center;
 }
-#primeraIndex img {
+
+img {
   width: 100%;
-  height: 700px;
+  height: auto;
   margin-top: 10px;
   align-content: center;
 }
-#primeraIndex h1 {
+
+h3 {
   position: absolute;
-  text-align: center;
-  left: 300px;
-  top: 30px;
-  font-size: 6em;
-  margin-top: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
 }
 
 /* INDEX 2 */
 #segundaIndex {
   text-align: center;
-  align-self: center;
+  padding: 50px;
 }
-#segundaIndex h1 {
-  text-align: center;
-  padding: 35px;
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-/* MOBILE */
-@media (max-width: 600px) {
-  #primeraIndex h1 {
+
+.facialesIndex2,
+.corporalesIndex2,
+.productosIndex2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.fotoFacialindex2,
+.fotoCorporalindex2,
+.fotoProductosindex2 {
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* MOBILE INDEX*/
+@media screen and (max-width: 600px) {
+  #primeraIndex h3 {
+    font-size: 35px;
+  }
+  #segundaIndex {
+    padding: 20px;
+  }
+  h1 {
     font-size: 20px;
-    position: absolute;
-    text-align: center;
-    left: 80px;
-    top: 5px;
-    margin-top: 15px;
   }
-  #primeraIndex img {
-    height: 180px;
+  .fotoFacialindex2,
+  .fotoCorporalindex2,
+  .fotoProductosindex2 {
+    width: 200px;
   }
-  #segundaIndex p {
-    display: none;
+  h2 {
+    font-size: 16px;
   }
-  #segundaIndex .facialesIndex2 {
-    grid-template-columns: 1fr 1fr;
-  }
-  #segundaIndex .corporalesIndex2 {
-    grid-template-columns: 1fr 1fr;
-  }
-  #segundaIndex .productosIndex2 {
-    grid-template-columns: 1fr 1fr;
-  }
-  #segundaIndex .facialI2 h2 {
-    font-size: 20px;
-    padding-right: 20px;
-  }
-  #segundaIndex .corporalI2 h2 {
-    font-size: 20px;
-    padding-left: 20px;
-  }
-  #segundaIndex .productoI2 h2 {
-    font-size: 20px;
-    padding-right: 20px;
-  }
-  #segundaIndex .fotoFacialindex2 {
-    width: 150px;
-    height: auto;
-  }
-  #segundaIndex .fotoCorporalindex2 {
-    width: 150px;
-    height: auto;
-  }
-  #segundaIndex .fotoProductosindex2 {
-    width: 150px;
-    height: auto;
+  p {
+    font-size: 14px;
   }
 }
 /* NOSOOTROS*/
 #contenidoNosotros {
-  display: grid;
-  grid-template-columns: 500px 700px;
-  grid-template-rows: auto;
+  display: flex;
   justify-content: center;
   align-items: center;
-  justify-items: center;
+  flex-direction: column;
+  padding: 50px;
+  text-align: center;
+}
+#contenidoNosotros .nosotros {
+  margin-bottom: 50px;
 }
 #contenidoNosotros .fotoNosotros {
-  width: 70%;
-  height: 600px;
-  margin-top: 15px;
+  width: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
-#contenidoNosotros .nosotros p {
-  margin-top: 70px;
+#contenidoNosotros h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-#contenidoNosotros .nosotros h2 {
-  padding: 25px;
+#contenidoNosotros p {
+  font-size: 16px;
+  line-height: 1.5;
 }
-
-.nosotros {
-  text-align: center;
-  align-self: center;
+#contenidoNosotros h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-
-/* MOBILE NOSOTROS*/
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #contenidoNosotros {
-    grid-template-columns: 1fr;
+    padding: 20px;
   }
   #contenidoNosotros .fotoNosotros {
-    display: none;
+    width: 200px;
   }
-  .nosotros h1 {
-    margin-top: 35px;
-    font-size: 25px;
-  }
-  .nosotros p {
-    font-size: 15px;
-    margin-top: 15px;
-    padding: 5px;
-  }
-  .nosotros h2 {
-    padding: 25px;
+  #contenidoNosotros h1 {
     font-size: 20px;
   }
+  #contenidoNosotros p {
+    font-size: 14px;
+  }
+  #contenidoNosotros h2 {
+    font-size: 16px;
+  }
 }
+
 /* TRATAMIENTOS */
 .Tratamientos {
   display: grid;
@@ -203,12 +201,6 @@ body {
   align-items: center;
   justify-items: center;
   /* MOBILE TRATAMIENTOS*/
-}
-.Tratamientos img {
-  width: 100%;
-  height: 250px;
-  border-radius: 50%;
-  margin: 20px;
 }
 .Tratamientos img:hover {
   transform: scale(1.3);
@@ -243,7 +235,7 @@ body {
   }
 }
 
-/* TRATAMIENTOS*/
+/* AGENDA*/
 #contenidoAgenda h1 {
   display: flex;
   margin: 30px;
@@ -325,7 +317,6 @@ body {
   text-align: center;
 }
 
-/* BARRA SOCIAL */
 .Sociales {
   display: flex;
   flex-direction: column;
@@ -368,7 +359,7 @@ body {
   color: #3f3d3e;
 }
 
-/* MOBILE CONTACTENOS*/
+/* CONTACTENOS MOBILE */
 @media (max-width: 600px) {
   #contenidoContactenos h1 {
     margin: 35px;
@@ -382,7 +373,7 @@ body {
     align-items: center;
   }
   .ubicacion iframe {
-    width: 90%;
+    width: 100%;
     height: 200px;
   }
   .ubicacion p {

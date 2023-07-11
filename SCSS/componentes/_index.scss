@@ -4,123 +4,86 @@
   width: 100%;
   position: relative;
   justify-content: center;
+}
 
-  img {
-    width: 100%;
-    height: 700px;
-    margin-top: 10px;
-    align-content: center;
-  }
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  align-content: center;
+}
 
-  h1 {
-    position: absolute;
-    text-align: center;
-    left: 300px;
-    top: 30px;
-    font-size: 6em;
-    margin-top: 70px;
-  }
+h3 {
+  @include centerElement;
+    font-size: 100px;
 }
 
 /* INDEX 2 */
 
 #segundaIndex {
   text-align: center;
-  align-self: center;
-
-  h1 {
-    text-align: center;
-    padding: 35px;
-  }
-
-  .facialesIndex2 {
-    @extend %pos-index2;
-  }
-
-  .fotoFacialindex2 {
-    @extend %img-index2;
-  }
-
-  .corporalesIndex2 {
-    @extend %pos-index2;
-  }
-
-  .fotoCorporalindex2 {
-    @extend %img-index2;
-  }
-
-  .productosIndex2 {
-    @extend %pos-index2;
-  }
-
-  .fotoProductosindex2 {
-    @extend %img-index2;
-  }
-
+  padding: 50px;
 }
 
-/* MOBILE */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-@media (max-width: 600px) {
-  #primeraIndex h1 {
-    font-size: 20px;
-    position: absolute;
-    text-align: center;
-    left: 80px;
-    top: 5px;
-    margin-top: 15px;
-  }
+.facialesIndex2,
+.corporalesIndex2,
+.productosIndex2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
 
-  #primeraIndex img {
-    height: 180px;
-  }
+.fotoFacialindex2,
+.fotoCorporalindex2,
+.fotoProductosindex2 {
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
 
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* MOBILE INDEX*/
+@media screen and (max-width: 600px) {
+  #primeraIndex {
+  h3 {
+      font-size: 35px;
+    }
+  } 
   #segundaIndex {
-    p {
-      display: none;
-    }
+    padding: 20px;
+  }
 
-    .facialesIndex2 {
-      grid-template-columns: 1fr 1fr;
-    }
+  h1 {
+    font-size: 20px;
+  }
 
-    .corporalesIndex2 {
-      grid-template-columns: 1fr 1fr;
-    }
+  .fotoFacialindex2,
+  .fotoCorporalindex2,
+  .fotoProductosindex2 {
+    width: 200px;
+  }
 
-    .productosIndex2 {
-      grid-template-columns: 1fr 1fr;
-    }
+  h2 {
+    font-size: 16px;
+  }
 
-    .facialI2 h2 {
-      font-size: map-get($img-index2, fsze);
-      padding-right: map-get($img-index2, padd-right);
-    }
-
-    .corporalI2 h2 {
-      font-size: map-get($img-index2, fsze);
-      padding-left: map-get($img-index2, padd-left);
-    }
-
-    .productoI2 h2 {
-      font-size: map-get($img-index2, fsze);
-      padding-right: map-get($img-index2, padd-right);
-    }
-
-    .fotoFacialindex2 {
-      width: map-get($img-index2mq, wd);
-      height: map-get($img-index2mq, hgt);
-
-    }
-
-    .fotoCorporalindex2 {
-      width: map-get($img-index2mq, wd);
-      height: map-get($img-index2mq, hgt);
-    }
-
-    .fotoProductosindex2 {
-      width: map-get($img-index2mq, wd);
-      height: map-get($img-index2mq, hgt);
-    }
+  p {
+    font-size: 14px;
   }
 }
